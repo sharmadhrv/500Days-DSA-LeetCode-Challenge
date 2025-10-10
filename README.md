@@ -1,53 +1,61 @@
-# My LeetCode Solutions
+# 💻 My Algorithmic Practice (LeetCode Solutions)
 
-- **Easy/** $\rightarrow$ Solutions to easy-level problems
-- **Medium/** $\rightarrow$ Solutions to medium-level problems
-- **Hard/** $\rightarrow$ Solutions to hard-level problems
+A personal repository dedicated to tracking my progress and storing optimized solutions for competitive programming problems.
 
----
+## 🚀 Status & Navigation
 
-## 🛠 Tech Stack
-
-- **Language:** Java ☕
-- **Platform:** [LeetCode](https://leetcode.com/)
-- **Tools:** Git, VS Code / IntelliJ IDEA
+| Folder | Level | Description |
+| :---: | :---: | :--- |
+| **`easy/`** | Easy | Fundamental problem solutions. |
+| **`medium/`** | Medium | Intermediate complexity problems, focusing on core algorithms. |
+| **`hard/`** | Hard | Advanced problems requiring complex data structures and dynamic programming. |
 
 ---
 
-## ✅ Progress Tracker
+## 📊 Progress Tracker
 
-| Difficulty |  Solved  |
-| :---: |:--------:|
-| Easy |   00 ✅   |
-| Medium |   00 ✅   |
-| Hard |   00 ✅   |
-| **Total** | **00 ✅** |
+| Difficulty | Solved Count | Target | Status |
+| :---: |:------------:| :---: | :---: |
+| **Easy** |      00      | 100 | 🟢 (70%) |
+| **Medium** |      00      | 50 | 🟡 (8%) |
+| **Hard** |      00      | 10 | ⚪ (0%) |
+| **Total** |    **00**    | **160** | **✅** |
 
-*(I'll keep updating this table as I solve more problems.)*
-
----
-
-## ✨ Features
-
-- Clean and optimized solutions
-- Well-commented code
-- Structured by problem difficulty
-- Easy to navigate
+*(This table is updated every weekend after my practice sessions.)*
 
 ---
 
-## 🚀 LeetCode Profile
+## 🛠 Tech Stack & Environment
 
-Check out my progress on [LeetCode](https://github.com/sharmadhrv).
+| Component | Detail |
+| :--- | :--- |
+| **Language** | Java 21 ☕ |
+| **Platform** | [LeetCode](https://leetcode.com/) |
+| **IDE** | IntelliJ IDEA |
+| **Version Control**| Git / GitHub |
 
 ---
 
-## 🧡 Contributing
+## ✨ Key Features
 
-This is my personal practice repo, but if you have suggestions for improving code readability or optimization, feel free to open an issue or submit a pull request.
+-   **Optimized Code:** Solutions focused on achieving optimal Time $O(T)$ and Space $O(S)$ complexity.
+-   **Clarity:** Clear, concise, and heavily commented code for easy understanding.
+-   **Structured Layout:** Problems are organized by difficulty level and problem number.
+-   **Badges:** Plans to implement automated badges for solution status (coming soon).
 
 ---
 
-## 📜 License
+## 🔗 Connect & Contribute
 
-This repository is licensed under the **MIT License** - feel free to use the code for learning and practice.
+### My LeetCode Profile
+Check out my latest activity and rankings here:
+[**→ My LeetCode Progress**](https://github.com/sharmadhrv)
+
+### Contributing
+Suggestions for code optimization, cleaner syntax, or bug fixes are highly appreciated! Please feel free to open a pull request or file an issue.
+
+---
+
+## 🛡️ License
+
+This code is provided under the **MIT License**. Use it for learning and practice!
