@@ -1,4 +1,4 @@
-package arrays.nextpermutation;
+package arrays.nextpermutation31;
 
 public class NextPermutation {
 
@@ -43,5 +43,4 @@ public class NextPermutation {
             nums[end--] = temp;
         }
     }
-
 }
