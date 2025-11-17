@@ -6,29 +6,31 @@ public class RemoveParentheses {
 
     public String removeParentheses(String s)
     {
-        StringBuilder sb = new StringBuilder();
-        int sum =0;
-        int j=0;
-        ArrayList<String> list = new ArrayList<>();
-        for(int i = 0;i<s.length();i++)
-        {
-            char c = s.charAt(i);
-            if(c =='(')
-                sum+=1;
-            else sum-=1;
-            if(sum == 0)
-            {
-                list.add(s.substring(j,i+1));
-                j = i+1;
-            }
-        }
+//        StringBuilder sb = new StringBuilder();
+//        int sum =0;
+//        int j=0;
+//        for(int i = 0;i<s.length();i++)
+//        {
+//            char c = s.charAt(i);
+//            if(c =='(')
+//                sum+=1;
+//            else sum-=1;
+//            if(sum == 0)
+//            {
+//                sb.append(s.substring(j+1,i));
+//                j = i+1;
+//            }
+//        }
+//        return sb.toString();
 
-        for(String str : list)
+// another approach
+        StringBuilder sb = new StringBuilder();
+        int count =0;
+        for(char c : s.toCharArray())
         {
-            for(int i =1;i<str.length()-1;i++)
-            {
-                sb.append(str.charAt(i));
-            }
+            if(c == '(') count++;
+            else count--;
+            if(count!= 0) sb.append(c);
         }
         return sb.toString();
     }
