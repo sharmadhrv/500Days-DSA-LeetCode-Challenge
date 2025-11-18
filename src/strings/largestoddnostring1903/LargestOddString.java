@@ -6,16 +6,16 @@ public class LargestOddString {
 
     public String largestOddNumber(String num)
     {
-        //String[] arr = num.split("");
-        StringBuilder sb = new StringBuilder();
-        int n = Integer.parseInt(num);
-        while(n>0)
+        String answer = "";
+        for(int i = num.length()-1;i>=0;i--)
         {
-            if(n%2!=0)
-                return String.valueOf(n);
-            n=n/10;
+            if((num.charAt(i)-'0') % 2 !=0)
+            {
+                answer = num.substring(0,i+1);
+                break;
+            }
         }
-        return "";
+        return answer;
     }
 
 }
