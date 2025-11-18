@@ -1,4 +1,4 @@
-package strings.removeoutermostparentheses;
+package strings.removeoutermostparentheses1021;
 
 public class Main {
 

@@ -1,6 +1,4 @@
-package strings.removeoutermostparentheses;
-
-import java.util.ArrayList;
+package strings.removeoutermostparentheses1021;
 
 public class RemoveParentheses {
 
@@ -34,5 +32,4 @@ public class RemoveParentheses {
         }
         return sb.toString();
     }
-
 }
