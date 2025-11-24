@@ -8,7 +8,7 @@ public class RemoveDuplicates {
     public ListNode duplicateElements(ListNode head)
     {
         if(head == null)
-        return head;
+            return head;
 
         ListNode temp = head;
 
