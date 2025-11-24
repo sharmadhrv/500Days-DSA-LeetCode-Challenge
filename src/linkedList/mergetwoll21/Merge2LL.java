@@ -40,4 +40,5 @@ public class Merge2LL {
     return dummy.next;
     }
 
+
 }
