@@ -1,4 +1,4 @@
-package linkedList.linkedlistcycle;
+package linkedList.linkedlistcycle141;
 
 public class LinkedListCycle {
 

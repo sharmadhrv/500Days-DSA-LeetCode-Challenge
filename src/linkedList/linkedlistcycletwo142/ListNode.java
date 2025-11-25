@@ -1,4 +1,4 @@
-package linkedList.linkedlistcycle2;
+package linkedList.linkedlistcycletwo142;
 
 public class ListNode {
 
