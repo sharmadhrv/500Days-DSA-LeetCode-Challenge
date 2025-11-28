@@ -8,20 +8,21 @@ public class Palindrome {
     {
         if(head == null || head.next == null) return true;
         ListNode mid = getMid(head);
-        ListNode newNode = mid.next;
+       // ListNode newNode = mid.next;
+        ListNode secondHead = mid.next;
         mid.next = null;
-        ListNode secondHead = reverse(newNode);
+        secondHead = reverse(secondHead);
         ListNode newLL = secondHead;
         while(head!=null && newLL != null)
         {
             if(head.val != newLL.val ) {
-                mid.next =reverse(newNode);
+                mid.next =reverse(secondHead);
                 return false;
             }
             head = head.next;
             newLL = newLL.next;
         }
-        mid.next = reverse(newNode);
+        mid.next = reverse(secondHead);
         return true;
     }
 
