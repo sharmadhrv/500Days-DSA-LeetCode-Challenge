@@ -55,5 +55,4 @@ public class ReOrderList {
         }
         return prev;
     }
-
 }
