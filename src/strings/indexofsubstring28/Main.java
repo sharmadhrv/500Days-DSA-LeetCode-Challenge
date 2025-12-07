@@ -5,8 +5,8 @@ public class Main {
     public static void main(String[] args) {
 
         SubStringIndex subStringIndex = new SubStringIndex();
-        String hamstack = "sadbutsad";
-        String needle = "sad";
+        String hamstack = "mississippi";
+        String needle = "issipi";
         System.out.println(subStringIndex.indexSubString(hamstack,needle));
     }
 }
