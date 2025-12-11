@@ -13,6 +13,7 @@ public class AddBinary {
             for (int i = 0; i < remNumber; i++)
                 sb.insert(0, '0');
             a=sb.toString();
+            lenA = a.length();
         }
         else{
             sb = new StringBuilder(b);
@@ -22,11 +23,9 @@ public class AddBinary {
         }
         sb = new StringBuilder();
         int  carry = 0;
-        char[] charA = a.toCharArray();
-        char[] charB = b.toCharArray();
         for(int i=lenA-1;i>=0;i--)
         {
-            if(charA[i] == '1' && charB[i]=='1')
+            if(a.charAt(i) == '1' && b.charAt(i)=='1')
             {
                 if(carry==0){
                     sb.append('0');
@@ -36,7 +35,7 @@ public class AddBinary {
                     sb.append('1');
                 }
             }
-            else if(charA[i] =='0' && charB[i] =='0')
+            else if(a.charAt(i) =='0' && b.charAt(i) =='0')
             {
                 if(carry ==0)
                     sb.append('0');
