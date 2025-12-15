@@ -7,34 +7,26 @@ public class LetterCombinations {
     public List<String> letterCombinations(String digits) {
 
         List<String> list = new ArrayList<>();
-        Map<Character, String> map = new HashMap<>();
-        map.put('2', "abc");
-        map.put('3', "def");
-        map.put('4', "ghi");
-        map.put('5', "jkl");
-        map.put('6', "mno");
-        map.put('7', "pqrs");
-        map.put('8', "tuv");
-        map.put('9', "wxyz");
+        String[] numberList = {"","","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
 
         List<List<String>> answer = new ArrayList<>(2);
-        char firstDigit = digits.charAt(0);
-        String firstDigitAlphabet = map.get(firstDigit);
-        String[] firstDigitArray = firstDigitAlphabet.split("");
-        List<String> innerArray = new ArrayList<>(Arrays.asList(firstDigitArray));
+        char digit = digits.charAt(0);
+        String digitAlphabet = numberList[digit-'0'];
+        String[] digitArray = digitAlphabet.split("");
+        List<String> innerArray = new ArrayList<>(Arrays.asList(digitArray));
         answer.add(new ArrayList<>(innerArray));
         for(int i =1;i<digits.length();i++)
         {
-            char digit = digits.charAt(i);
+            digit = digits.charAt(i);
             innerArray.clear();
-             firstDigitAlphabet = map.get(digit);
-             firstDigitArray = firstDigitAlphabet.split("");
+             digitAlphabet = numberList[digit-'0'];
+             digitArray = digitAlphabet.split("");
              List<String> listArray = answer.getFirst();
              for(int j =0;j< listArray.size();j++)
              {
-                 for(int k =0;k<firstDigitArray.length;k++)
+                 for(int k =0;k<digitArray.length;k++)
                  {
-                     String str = listArray.get(j)+firstDigitArray[k];
+                     String str = listArray.get(j)+digitArray[k];
                      innerArray.add(str);
                  }
              }
