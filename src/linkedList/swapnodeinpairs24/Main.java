@@ -6,7 +6,7 @@ public class Main {
     Main main = new Main();
     SwapNode swapNode = new SwapNode();
 
-    int[] arr = {1,2,3,4};
+    int[] arr = {1,2,3,4,5,6,7,8};
     ListNode list = null;
     list= main.insertAtEnd(arr[0],null);
         for(int i=1;i<arr.length;i++)
