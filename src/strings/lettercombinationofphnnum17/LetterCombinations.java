@@ -36,4 +36,38 @@ public class LetterCombinations {
 
         return answer.getFirst();
     }
+
+
+    public List<String> letterCombinationsRecurrsion(String digits) {
+
+        String[] numberList = {"","","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
+
+        if(digits.isEmpty()) return new ArrayList<>();
+        List<String> answer = help("",digits,numberList);
+        return answer;
+    }
+
+    private static List<String>  help(String p,String u,String[] numberList)
+    {
+        if(u.isEmpty())
+        {
+            List<String> list = new ArrayList<>();
+            list.add(p);
+            return list;
+        }
+        List<String> answer = new ArrayList<>();
+        int ch = u.charAt(0)-'0';
+        char[] charArray = numberList[ch].toCharArray();
+        for(int i =0;i<charArray.length;i++)
+        {
+            List<String> temp = help(p+charArray[i],u.substring(1),numberList);
+            answer.addAll(temp);
+        }
+        return answer;
+    }
+
+
+
+
 }
+
