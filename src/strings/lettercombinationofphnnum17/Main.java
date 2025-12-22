@@ -1,5 +1,6 @@
 package strings.lettercombinationofphnnum17;
 
+import java.sql.SQLOutput;
 import java.util.List;
 
 public class Main {
@@ -9,8 +10,8 @@ public class Main {
         LetterCombinations combinations = new LetterCombinations();
         String s = "223";
         List<String> answer = combinations.letterCombinations(s);
-        for(String str : answer)
-            System.out.print(str+" ");
-        System.out.println(combinations.letterCombinationsRecurrsion(""));
+        System.out.println(answer);
+        System.out.println(combinations.letterCombinationsRecurrsion("223"));
+        System.out.println(combinations.countCombinations("223"));
     }
 }

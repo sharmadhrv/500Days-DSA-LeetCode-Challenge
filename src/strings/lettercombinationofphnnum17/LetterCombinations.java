@@ -67,6 +67,31 @@ public class LetterCombinations {
     }
 
 
+    public int countCombinations(String digits)
+    {
+        String[] numberList = {"","","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
+
+        if(digits.isEmpty()) return 0;
+        int answer = helpCount("",digits,numberList);
+        return answer;
+    }
+
+    private static int helpCount(String p,String u,String[] numberList)
+    {
+        if(u.isEmpty())
+        {
+            return 1;
+        }
+        int  answer = 0;
+        int ch = u.charAt(0)-'0';
+        char[] charArray = numberList[ch].toCharArray();
+        for(int i =0;i<charArray.length;i++)
+        {
+            int  temp = helpCount(p+charArray[i],u.substring(1),numberList);
+            answer+=temp;
+        }
+        return answer;
+    }
 
 
 }
