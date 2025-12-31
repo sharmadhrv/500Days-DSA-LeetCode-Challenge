@@ -10,7 +10,7 @@ public class Main {
         list= main.insertAtEnd(arr[0],null);
         for(int i=1;i<arr.length;i++)
             list = main.insertAtEnd(arr[i],list);
-        System.out.println(maximumTwinSum.pairSum2(list));
+        System.out.println(maximumTwinSum.pairSum(list));
 
     }
 
