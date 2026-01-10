@@ -6,11 +6,11 @@ public class InsertGcd {
         ListNode cur = head;
         while(cur.next!=null)
         {
-            ListNode next = cur.next;
-            ListNode temp = new ListNode(gcd(cur.val,next.val));
+            ListNode node = cur.next;
+            ListNode temp = new ListNode(gcd(cur.val,node.val));
             cur.next = temp;
-            temp.next = next;
-            cur = next;
+            temp.next = node;
+            cur = node;
         }
         return  head;
     }
