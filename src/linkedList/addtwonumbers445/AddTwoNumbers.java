@@ -3,7 +3,7 @@ package linkedList.addtwonumbers445;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AddTwoNUmbers {
+public class AddTwoNumbers {
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 

@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         Main main = new Main();
-        AddTwoNUmbers addTwoNUmbers = new AddTwoNUmbers();
+        AddTwoNumbers addTwoNUmbers = new AddTwoNumbers();
 
         int[] arr = {9,9,9};
         ListNode list = null;
