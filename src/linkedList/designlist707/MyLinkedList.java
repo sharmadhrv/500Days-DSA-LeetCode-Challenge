@@ -78,7 +78,7 @@ public class MyLinkedList {
         while(temp.next!=null && i !=index-1)
         {
             temp = temp.next;
-            i++;
+            i= i+1;
         }
         if(temp.next ==null) return;
         temp.next = temp.next.next;
