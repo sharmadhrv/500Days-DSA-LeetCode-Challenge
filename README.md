@@ -17,9 +17,9 @@ A personal repository dedicated to tracking my progress and storing optimized so
 | Difficulty | Solved Count | Target | Status |
 | :---: |:------------:| :---: | :---: |
 | **Easy** |      48      | 100 | 🟢 (70%) |
-| **Medium** |      55     | 50 | 🟡 (8%) |
-| **Hard** |      04      | 10 | ⚪ (0%) |
-| **Total** |    **94**    | **160** | **✅** |
+| **Medium** |      55     | 100 | 🟡 (8%) |
+| **Hard** |      04      | 50 | ⚪ (0%) |
+| **Total** |    **107**    | **250** | **✅** |
 
 *(This table is updated every weekend after my practice sessions.)*
 
