@@ -10,7 +10,7 @@ public class ArrayStack {
     }
 
     public void push(int x) {
-        if(top == SIZE)
+        if(top == SIZE-1)
             throw new RuntimeException("Stack Over flow");
         stack[++top ] = x;
     }
@@ -29,6 +29,7 @@ public class ArrayStack {
 
     public boolean isEmpty() {
         return top == -1;
+
     }
 
 }
