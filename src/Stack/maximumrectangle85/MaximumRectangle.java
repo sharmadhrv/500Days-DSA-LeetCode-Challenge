@@ -5,9 +5,8 @@ import java.util.Stack;
 public class MaximumRectangle {
 
     public static void main(String[] args) {
-        //char[][] matrix = {{'1','0','1','0','0'},{'1','0','1','1','1'},{'1','1','1','1','1'}
-         //       ,{'1','0','0','1','0'}};
-        char[][] matrix = {{'1'}};
+        char[][] matrix = {{'1','0','1','0','0'},{'1','0','1','1','1'},{'1','1','1','1','1'}
+                ,{'1','0','0','1','0'}};
         System.out.println(maximalRectangle(matrix));
     }
 
