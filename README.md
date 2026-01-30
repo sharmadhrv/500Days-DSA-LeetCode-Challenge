@@ -19,7 +19,7 @@ A personal repository dedicated to tracking my progress and storing optimized so
 | **Easy** |      48      | 100 | 🟢 (70%) |
 | **Medium** |      55     | 100 | 🟡 (8%) |
 | **Hard** |      04      | 50 | ⚪ (0%) |
-| **Total** |    **123**    | **250** | **✅** |
+| **Total** |    **123**    | **500** | **✅** |
 
 *(This table is updated every weekend after my practice sessions.)*
 
