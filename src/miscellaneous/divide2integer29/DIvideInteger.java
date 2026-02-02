@@ -23,6 +23,6 @@ public class DIvideInteger {
             dividend -=divisor;
 
         }
-        return  quotient*negative;
+        return  negative*quotient;
     }
 }
