@@ -23,7 +23,8 @@ public class StringToInteger {
             int digit = ch-'0';
             if (res > Long.MAX_VALUE / 10 ||
                     (res == Long.MAX_VALUE / 10 && digit > 7)) {
-                return (sign == 1) ? Long.MAX_VALUE : Long.MIN_VALUE;
+
+                         return (sign == 1) ? Long.MAX_VALUE : Long.MIN_VALUE;
             }
             res = res*10 + digit;
         }
