@@ -47,7 +47,7 @@ public class PermutationString {
         }
         return localCallList;
     }
-    public static int   permutationCount(String p , String up)
+    public static int permutationCount(String p , String up)
     {
         if(up.isEmpty())
         {
