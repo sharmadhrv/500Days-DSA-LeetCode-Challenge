@@ -3,6 +3,7 @@ package linkedList.insertgcd2807;
 public class InsertGcd {
 
     public ListNode insertGreatestCommonDivisors(ListNode head) {
+
         ListNode cur = head;
         while(cur.next!=null)
         {
@@ -21,6 +22,4 @@ public class InsertGcd {
             return a;
         return gcd(b,a%b);
     }
-
-
 }
