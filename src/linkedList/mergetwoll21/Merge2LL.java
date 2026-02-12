@@ -13,6 +13,7 @@ public class Merge2LL {
         ListNode dummy = node;
 
         while (temp1 != null && temp2 != null) {
+
             if (temp1.val < temp2.val) {
                 node.next = temp1;
                 temp1 = temp1.next;
