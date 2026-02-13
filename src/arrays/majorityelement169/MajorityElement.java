@@ -30,7 +30,6 @@ public class MajorityElement {
             if(count>freq)
                 return candidate;
         }
-
         return -1;
     }
 }
