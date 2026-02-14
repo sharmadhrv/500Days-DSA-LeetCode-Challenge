@@ -6,8 +6,6 @@ public class FindMin {
         int answer = pivot+1;
         return nums[answer];
         }
-
-
     private int findPivot(int[] nums) {
         int low = 0;
         int high = nums.length - 1;
