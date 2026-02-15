@@ -4,23 +4,45 @@ public class MaxConsecutiveOnes {
 
     public int longestOnes(int[] nums, int k) {
 
-        int length  = 0,maxLength = 0;
-        for(int i = 0;i<nums.length;i++)
+        int left = 0,right = 0;
+        int maxLength = 0;
+        int zerosCount = 0;
+        for(right = 0;right<nums.length;right++)
         {
-            int numberOfZeros = k;
-            length = 0;
-            for(int j = i; j<nums.length;j++) {
-                if (nums[j] == 1)
-                    length++;
-                else if (nums[j] == 0 && numberOfZeros >= 0) {
-                    length++;
-                    numberOfZeros--;
-                } else if (nums[j] == 0 && numberOfZeros==0)break;
-
-
-            }
-            maxLength = Math.max(length,maxLength);
+            if(nums[right] == 0)
+                zerosCount++;
+                while(zerosCount>k)
+                {
+                    if(nums[left]==0)
+                        zerosCount--;
+                    left++;
+                }
+                maxLength = Math.max(maxLength,right-left+1);
         }
-return maxLength;
+        return maxLength;
+    }
+
+    public int longestOnes2(int[] nums, int k) {
+
+        int left = 0, right = 0,length = 0, maxLength = 0;
+        int zerosCount = 0;
+
+        for(right = 0;right<nums.length;right++)
+        {
+            if(nums[right] == 0)
+                zerosCount++;
+            if(zerosCount>k)
+            {
+                if(nums[left]==0)
+                    zerosCount--;
+                left++;
+            }
+            if(zerosCount<=k)
+            {
+                length = right-left+1;
+                maxLength = Math.max(maxLength,length);
+            }
+        }
+        return maxLength;
     }
 }
