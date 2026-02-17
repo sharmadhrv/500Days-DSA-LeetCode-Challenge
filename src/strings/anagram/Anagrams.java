@@ -11,7 +11,6 @@ public class Anagrams {
         {
             arr[c-'a']++;
         }
-
         for(char c: t.toCharArray())
             arr[c-'a']--;
 
@@ -21,6 +20,8 @@ public class Anagrams {
 
         return true;
     }
+
+
 //2. Using HashMap
     public boolean isAnagram2(String s,String t)
     {
