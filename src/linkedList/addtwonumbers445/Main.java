@@ -1,6 +1,6 @@
 package linkedList.addtwonumbers445;
 
-public class Main {
+public class  Main {
     public static void main(String[] args) {
 
         Main main = new Main();
