@@ -1,8 +1,6 @@
 package arrays.intersectionof2array349;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class IntersectionOfArray {
 
@@ -10,21 +8,19 @@ public class IntersectionOfArray {
 
         Set<Integer> set = new HashSet<>();
         Set<Integer> resultSet = new HashSet<>();
-        for(int i = 0 ; i<nums1.length;i++)
-        {
+        for (int i = 0; i < nums1.length; i++) {
             set.add(nums1[i]);
         }
-        for(int i = 0,j=0;i<nums2.length;i++,j++)
-        {
-            if(set.contains(nums2[i]))
+        for (int i = 0, j = 0; i < nums2.length; i++, j++) {
+            if (set.contains(nums2[i]))
                 resultSet.add(nums2[i]);
         }
         int[] answer = new int[resultSet.size()];
         int i = 0;
-        for(int element : resultSet)
-        {
+        for (int element : resultSet) {
             answer[i++] = element;
         }
-return answer;
+        return answer;
     }
 }
+
