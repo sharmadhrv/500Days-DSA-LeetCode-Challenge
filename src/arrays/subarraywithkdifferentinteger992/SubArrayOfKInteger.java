@@ -12,7 +12,7 @@ public class SubArrayOfKInteger {
 
     private int helpingFunction(int[] nums, int k){
 
-        int left= 0, right = 0, count = 0;
+        int left= 0, right, count = 0;
         int value;
         Map<Integer,Integer> map = new HashMap<>();
 
