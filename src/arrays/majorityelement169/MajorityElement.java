@@ -18,7 +18,6 @@ public class MajorityElement {
             else
                 count--;
         }
-
         if(count !=0)
         {
             count =0;
