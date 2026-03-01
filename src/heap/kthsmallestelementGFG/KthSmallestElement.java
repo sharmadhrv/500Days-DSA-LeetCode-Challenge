@@ -8,6 +8,7 @@ public class KthSmallestElement {
     public int kthSMallestElement(int[] arr, int k) {
 
         PriorityQueue<Integer> priorityQueue = new PriorityQueue<>(arr.length, Collections.reverseOrder());
+
         int i ;
         for(i = 0;i<k;i++)
             priorityQueue.add(arr[i]);
