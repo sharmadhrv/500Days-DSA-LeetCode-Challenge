@@ -55,7 +55,5 @@ public class IsoMorphicString {
             tsArr[c2] = i + 1;
         }
         return true;
-
-
     }
 }
