@@ -45,23 +45,6 @@ public class TreeImplementation {
         display(root,0);
     }
 
-//    private void display(TreeNode node, int level) {
-//        if (node == null) return;
-//
-//        display(node.right,level+1);
-//        if(level!=0)
-//        {
-//            for(int i = 0;i<level;i++)
-//            {
-//                System.out.print("|\t");
-//            }
-//            System.out.println("----->"+node.data);
-//        }
-//        else
-//            System.out.println(node.data);
-//
-//        display(node.left,level+1);
-//    }
 
     private void display(TreeNode node, int level) {
         if (node == null) return;
