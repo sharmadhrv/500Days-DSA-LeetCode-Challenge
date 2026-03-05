@@ -11,7 +11,7 @@ public class BSTImplementation {
         return node.height;
     }
 
-    public boolean isEMpty()
+    public boolean isEmpty()
     { return root == null;}
 
     public void insert(int value){
@@ -31,7 +31,9 @@ public class BSTImplementation {
         if(value>node.data)
             node.right = insert(value, node.right);
 
-        node.height = Math.max()
+        node.height = Math.max(node.left.height,node.right.height)+1;
+
+        return node;
     }
 
 }
