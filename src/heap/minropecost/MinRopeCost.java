@@ -5,7 +5,6 @@ import java.util.PriorityQueue;
 public class MinRopeCost {
 
     public int minCost(int[] arr) {
-        // code here
 
         PriorityQueue<Integer> minHeap = new PriorityQueue<>(arr.length);
         for (int i : arr)
