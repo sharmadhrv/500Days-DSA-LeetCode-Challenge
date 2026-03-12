@@ -31,7 +31,7 @@ public class KListElement {
         {
                int value = nums.get(i).getFirst();
                max = Math.max(max,value);
-               minHeap.add(new Node(value, i,0);
+               minHeap.add(new Node(value, i,0));
         }
 
        while(minHeap.size() == nums.size())
@@ -51,7 +51,6 @@ public class KListElement {
                minHeap.add(new Node(nextValue, node.listIndex, node.elementIndex+1));
                max = Math.max(max,nextValue);
            }
-
        }
             return new int[] {rangeStart,rangeEnd};
     }
