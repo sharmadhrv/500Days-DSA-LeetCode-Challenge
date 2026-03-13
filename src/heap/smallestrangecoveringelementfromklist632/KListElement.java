@@ -33,7 +33,6 @@ public class KListElement {
                max = Math.max(max,value);
                minHeap.add(new Node(value, i,0));
         }
-
        while(minHeap.size() == nums.size())
        {
            Node node = minHeap.poll();
