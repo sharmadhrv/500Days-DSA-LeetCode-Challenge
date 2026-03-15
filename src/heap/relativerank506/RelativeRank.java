@@ -22,7 +22,6 @@ public class RelativeRank {
         for(int i=0 ;i<score.length;i++) {
             maxHeap.add(new Node(score[i], i));
         }
-
             String[] answer = new String[score.length];
             for(int i = 1;i<=score.length;i++) {
 
