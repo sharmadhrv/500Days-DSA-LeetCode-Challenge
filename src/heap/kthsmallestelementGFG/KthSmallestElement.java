@@ -5,7 +5,7 @@ import java.util.PriorityQueue;
 
 public class KthSmallestElement {
 
-    public int kthSMallestElement(int[] arr, int k) {
+    public int kthSmallestElement(int[] arr, int k) {
 
         PriorityQueue<Integer> priorityQueue = new PriorityQueue<>(arr.length, Collections.reverseOrder());
 
