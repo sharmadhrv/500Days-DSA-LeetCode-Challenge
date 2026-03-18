@@ -31,17 +31,22 @@ public class TopKFrequentElement {
                 frequency.compute(i, (key, freq) -> freq + 1);
             }
         }
-        PriorityQueue<Node> maxHeap = new PriorityQueue<>((a,b)->a.freq-b.freq);
+        PriorityQueue<Node> minHeap = new PriorityQueue<>((a,b)->a.freq-b.freq);
 
-        frequency.forEach((key, value) -> maxHeap.add(new Node(key,value)));
+        for(Map.Entry<Integer,Integer> entry: frequency.entrySet())
+        {
+            minHeap.add(new Node(entry.getKey(),entry.getValue()));
+
+            if(minHeap.size()>k)
+                minHeap.poll();
+        }
 
         int [] answer = new int[k];
         for(int i  = 0;i<k;i++)
         {
-            Node node = maxHeap.poll();
+            Node node = minHeap.poll();
             answer[i] = node.value;
         }
         return answer;
     }
-
 }
