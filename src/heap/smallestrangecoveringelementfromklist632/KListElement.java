@@ -43,7 +43,6 @@ public class KListElement {
                rangeEnd= max;
                rangeStart = min;
            }
-
            if(node.elementIndex+1< nums.get(node.listIndex).size())
            {
                int nextValue = nums.get(node.listIndex).get(node.elementIndex+1);
