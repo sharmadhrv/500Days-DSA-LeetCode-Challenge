@@ -21,7 +21,6 @@ public class TopKFrequentElement {
     public int[] topKFrequent(int[] nums, int k) {
 
         Map<Integer,Integer> frequency = new HashMap<>();
-
         for(int i : nums)
         {
             if(!frequency.containsKey(i))
