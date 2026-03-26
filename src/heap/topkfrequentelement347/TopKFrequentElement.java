@@ -1,6 +1,5 @@
 package heap.topkfrequentelement347;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.PriorityQueue;
@@ -34,11 +33,9 @@ public class TopKFrequentElement {
         for(Map.Entry<Integer,Integer> entry: frequency.entrySet())
         {
             minHeap.add(new Node(entry.getKey(),entry.getValue()));
-
             if(minHeap.size()>k)
                 minHeap.poll();
         }
-
         int [] answer = new int[k];
         for(int i  = 0;i<k;i++)
         {
