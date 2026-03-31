@@ -14,7 +14,6 @@ public class PlayerWithTrainer {
         {
             if(players[player] <= trainers[trainer])
                 player+=1;
-
             trainer++;
         }
         return player;
