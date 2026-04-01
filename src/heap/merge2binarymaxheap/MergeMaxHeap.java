@@ -14,7 +14,6 @@ public class MergeMaxHeap {
             heapify(mergedArray,mergedArray.length,i);
         return mergedArray;
     }
-
     private void  heapify(int[] heap , int size,int i  ){
         int largest = i;
         int leftIndex = 2*i+1;
