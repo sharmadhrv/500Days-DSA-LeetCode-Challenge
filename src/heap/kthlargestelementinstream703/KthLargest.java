@@ -12,8 +12,6 @@ public class KthLargest {
         for(int i : nums)
             add(i);
     }
-
-
     public int add(int val) {
       minHeap.add(val);
       if(minHeap.size()>k)
