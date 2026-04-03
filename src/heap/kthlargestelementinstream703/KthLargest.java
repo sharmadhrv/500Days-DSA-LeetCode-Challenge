@@ -3,8 +3,7 @@ package heap.kthlargestelementinstream703;
 import java.util.PriorityQueue;
 
 public class KthLargest {
-
-    PriorityQueue<Integer> minHeap ;
+   PriorityQueue<Integer> minHeap ;
     int k ;
     public KthLargest(int k, int[] nums) {
         minHeap = new PriorityQueue<>();
