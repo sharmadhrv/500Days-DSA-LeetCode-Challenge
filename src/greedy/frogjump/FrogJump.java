@@ -60,7 +60,6 @@ public class FrogJump {
             int right = Integer.MAX_VALUE;
             if(i>1)
                 right = prev2 + Math.abs((height[i] - height[i-2]));
-
             int cur = Math.min(left,right);
             prev2 = prev1;
             prev1 = cur;
