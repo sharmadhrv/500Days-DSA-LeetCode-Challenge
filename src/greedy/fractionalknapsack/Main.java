@@ -11,7 +11,6 @@ public class Main {
         int[] value = {100,60,100,200};
         int[] weight = {20,10,50,50};
         int capacity = 90;
-
         System.out.println(fractionalKnapsack.fractionalKnapsack(value,weight,capacity));
     }
 }
