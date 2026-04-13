@@ -3,7 +3,6 @@ package greedy.fractionalknapsack;
 import greedy.fabonaccinumber.FaboonacciNumber;
 
 public class Main {
-
     public static void main(String[] args) {
 
         FractionalKnapsack fractionalKnapsack = new FractionalKnapsack();
