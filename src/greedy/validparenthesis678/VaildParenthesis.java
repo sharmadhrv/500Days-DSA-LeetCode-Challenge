@@ -3,7 +3,6 @@ package greedy.validparenthesis678;
 public class VaildParenthesis {
 
     public boolean checkValidString(String s) {
-
         int min = 0;
         int max = 0;
         for(char c : s.toCharArray())
