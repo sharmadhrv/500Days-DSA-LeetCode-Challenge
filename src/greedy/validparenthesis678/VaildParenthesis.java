@@ -16,7 +16,7 @@ public class VaildParenthesis {
             else if(c==')')
             {
                 min -=1;
-                max +=1;
+                max -=1;
             }
             else{
                 min -=1;
@@ -25,7 +25,7 @@ public class VaildParenthesis {
             if(max<0) return false;
             if(min<0) min = 0;
         }
-        return true;
+        return min  == 0;
     }
 
     public boolean checkValidString2(String s) {
