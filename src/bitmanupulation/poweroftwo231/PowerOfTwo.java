@@ -3,6 +3,7 @@ package bitmanupulation.poweroftwo231;
 public class PowerOfTwo {
 
     public static void main(String[] args) {
+
         System.out.println(isPowerOfTwo(-2147483648));
     }
     public static boolean isPowerOfTwo(int n) {
