@@ -10,7 +10,6 @@ public class Main {
         list1= main.insertAtEnd(arr1[0],null);
         for(int i=1;i<arr1.length;i++)
             list1 = main.insertAtEnd(arr1[i],list1);
-
         int[] arr2 = {0};
         ListNode list2 = null;
         list2= main.insertAtEnd(arr2[0],null);
