@@ -26,7 +26,6 @@ public class Candy {
                 else right[i] = 1;
             }
         }
-
         int count = 0;
         for(int i = 0;i< ratings.length;i++)
         {
