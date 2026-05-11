@@ -6,7 +6,6 @@ public class InsertInterval {
 
         int[][] temp = new int[intervals.length+1][2];
         int n = intervals.length;
-
         int i =0,k=0;
         while(i<n && newInterval[0] > intervals[i][1])
         {
@@ -20,9 +19,7 @@ public class InsertInterval {
            newInterval[1] = Math.max(newInterval[1],intervals[i][1]);
            i++;
         }
-
         temp[k++] = newInterval;
-
         while(i<n)
         {
             temp[k] = intervals[i];
