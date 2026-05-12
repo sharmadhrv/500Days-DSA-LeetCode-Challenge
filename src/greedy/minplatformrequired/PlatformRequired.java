@@ -9,8 +9,10 @@ public class PlatformRequired {
         int n= arrival.length;
         int i=0,j=0;
         int count = 0,maxCount = 0;
+
         Arrays.sort(arrival);
         Arrays.sort(departure);
+
         while(i<n)
         {
             if(arrival[i] <= departure[j])
