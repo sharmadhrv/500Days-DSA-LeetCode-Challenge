@@ -11,6 +11,7 @@ public class AssignCookies {
         int child=0,cookie=0;
         while(cookie<s.length && child<g.length)
         {
+
            if(g[child]<=s[cookie])
                child+=1;
            cookie++;
