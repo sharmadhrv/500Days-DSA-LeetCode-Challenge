@@ -16,8 +16,10 @@ public class CoinChange {
                 count++;
             }
         }
+
         if(amount==0)
             return count;
+
         return -1;
     }
 }
