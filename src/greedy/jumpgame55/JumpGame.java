@@ -12,6 +12,7 @@ public class JumpGame {
             if(maxIndex >= nums.length-1)
                 return  true;
         }
+
         return maxIndex >= nums.length-1;
     }
 }
