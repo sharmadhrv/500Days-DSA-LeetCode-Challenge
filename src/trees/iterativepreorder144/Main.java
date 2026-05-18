@@ -13,7 +13,7 @@ public class Main {
 
         IterativePreOrder obj = new IterativePreOrder();
 
-        List<List<Integer>> result = obj.preorderTraversal(root);
+        List<Integer> result = obj.preorderTraversal(root);
 
         System.out.println(result);
 
