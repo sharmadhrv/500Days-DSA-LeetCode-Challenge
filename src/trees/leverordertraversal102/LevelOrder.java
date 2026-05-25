@@ -10,6 +10,7 @@ public class LevelOrder {
 
         Queue<TreeNode> queue = new LinkedList<>();
         List<List<Integer>> list = new LinkedList<>();
+
         if(root == null) return list;
 
         queue.offer(root);
@@ -24,6 +25,7 @@ public class LevelOrder {
                     queue.offer(queue.peek().left);
                 if(queue.peek().right!=null)
                     queue.offer(queue.peek().right);
+
                 subList.add(queue.poll().val);
             }
             list.add(subList);
