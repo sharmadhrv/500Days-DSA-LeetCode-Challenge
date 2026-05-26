@@ -13,7 +13,6 @@ public class SymmetricTree {
             return left == right;
 
         if(left.val != right.val) return false;
-
         return helper(left.left,right.right) && helper(left.right, right.left);
     }
 }
