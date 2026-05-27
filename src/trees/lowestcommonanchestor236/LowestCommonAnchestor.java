@@ -1,11 +1,5 @@
 package trees.lowestcommonanchestor236;
 
-import com.sun.source.tree.Tree;
-
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-
 public class LowestCommonAnchestor {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if(root == null || root ==p || root ==q) return root;
