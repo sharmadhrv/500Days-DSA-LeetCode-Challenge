@@ -58,12 +58,16 @@ public class DistanceKNodes {
     {
         Queue<TreeNode> queue = new LinkedList<>();
         queue.offer(root);
-        while(!queue.isEmpty()) {
+
+        while(!queue.isEmpty())
+        {
             TreeNode node = queue.poll();
+
             if (node.left != null ) {
                 map.put(node.left, node);
                 queue.offer(node.left);
             }
+
             if (node.right != null) {
                 map.put(node.right, node);
                 queue.offer(node.right);
