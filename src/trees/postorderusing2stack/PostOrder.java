@@ -17,6 +17,7 @@ public class PostOrder {
         if(root == null) return postOrder;
 
         stack1.push(root);
+
         while(!stack1.isEmpty())
         {
             TreeNode node = stack1.pop();
@@ -26,6 +27,7 @@ public class PostOrder {
                 stack1.push(node.right);
             stack2.push(node);
         }
+
         while(!stack2.isEmpty())
         {
             postOrder.add(stack2.pop().val);
