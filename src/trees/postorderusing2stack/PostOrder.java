@@ -27,6 +27,7 @@ public class PostOrder {
                 stack1.push(node.right);
             stack2.push(node);
         }
+
         while(!stack2.isEmpty())
         {
             postOrder.add(stack2.pop().val);
