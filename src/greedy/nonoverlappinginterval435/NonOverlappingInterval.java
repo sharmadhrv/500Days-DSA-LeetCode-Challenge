@@ -18,7 +18,6 @@ public class NonOverlappingInterval {
                 lastEnd = intervals[i][1];
             }
         }
-
         return n-count;
     }
 }
