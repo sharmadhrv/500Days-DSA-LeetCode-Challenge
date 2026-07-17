@@ -47,7 +47,6 @@ public class SerializeDeserialize {
                 queue.offer(right);
             }
         }
-
         return root;
     }
 
