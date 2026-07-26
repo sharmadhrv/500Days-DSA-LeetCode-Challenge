@@ -9,6 +9,7 @@ public class Construct {
         return answer;
 
     }
+
     private TreeNode helper (int[] preOrder, int upperBound, int[] i)
     {
         if(i[0] == preOrder.length || preOrder[i[0]]>upperBound) return null;
