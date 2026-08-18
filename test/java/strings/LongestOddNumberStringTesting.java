@@ -18,7 +18,7 @@ public class LongestOddNumberStringTesting {
     @Test
     public void subString()
     {
-        assertEquals("45270",largestOddString.largestOddNumber("4527"));
+        assertEquals("4527",largestOddString.largestOddNumber("45270"));
     }
 
     @Test
