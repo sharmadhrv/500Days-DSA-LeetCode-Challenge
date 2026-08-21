@@ -29,7 +29,7 @@ public class Main {
         adj.get(8).add(4);
         adj.get(8).add(7);
 
-        System.out.println(dfs.dfs(count,adj,4));
+        System.out.println(dfs.dfs(count,adj,8));
 
     }
 }
