@@ -5,7 +5,7 @@ public class FloodFill {
 
     public int[][] floodFill(int[][] image, int sr, int sc, int color) {
 
-        if(image[sc][sc] == color) return image;
+        if(image[sr][sc] == color) return image;
 
         dfs(image,sr,sc,color,image[sr][sc]);
         return image;
@@ -24,7 +24,7 @@ public class FloodFill {
        dfs(image,row-1,col,color,originalColor);
        dfs(image,row+1,col,color,originalColor);
        dfs(image,row,col-1,color,originalColor);
-       dfs(image,row,col-1, color,originalColor);
+       dfs(image,row,col+1, color,originalColor);
 
     }
 }
