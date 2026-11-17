@@ -7,6 +7,8 @@ public class Atoi {
         s = s.trim();
         int sign = 1;
         int index = 0;
+
+        if(s.isEmpty()) return 0;
         if(s.charAt(0)=='-')
         {
             index++;
@@ -24,7 +26,7 @@ public class Atoi {
 
             int digit = c-'0';
 
-            if(res > Integer.MAX_VALUE/10 || (res < Integer.MIN_VALUE/10 && digit > 7 ))
+            if(res > Integer.MAX_VALUE/10 || (res == Integer.MIN_VALUE/10 && digit > 7 ))
             {
                 if(sign == -1) return Integer.MIN_VALUE;
                 else return  Integer.MAX_VALUE;
@@ -32,5 +34,6 @@ public class Atoi {
             res = res*10 + digit;
         }
         return res;
+
     }
 }
