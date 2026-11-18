@@ -25,8 +25,6 @@ public class StringCompression {
             }
 
         }
-       String s = new String(chars);
-        s = s.substring(0,i);
-        return s.length();
+       return i;
     }
 }
