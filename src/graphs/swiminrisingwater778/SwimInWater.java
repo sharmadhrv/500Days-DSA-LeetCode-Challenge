@@ -40,6 +40,7 @@ public class SwimInWater {
                 int ro = t.row + rowList[i];
                 int co = t.col + colList[i];
 
+
                 if (ro >= 0 && ro < grid.length && co >= 0 && co < grid.length) {
                     int newEffort = Math.max(t.level, grid[ro][co]);
                     if (newEffort < dist[ro][co]) {
