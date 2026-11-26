@@ -9,6 +9,7 @@ public class Sqrt {
         int end = x;
         while(start<=x)
         {
+
             int mid = start+(x-start)/2;
             long sq =(long) mid * mid;
 
